@@ -64,3 +64,9 @@ lesson. Spring is an application framework that makes application management
 easier and SpringBoot is a sub project of Spring which streamlines most
 configurations. In the coming lessons, we will learn more about both Spring and
 SpringBoot.
+
+## References
+
+- [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/index.html)
+  (reference document)
+- [Spring Guides](https://spring.io/guides)
