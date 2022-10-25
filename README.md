@@ -1,72 +1,118 @@
-# What is Spring and SpringBoot?
+# Introduction to Spring
 
 ## Learning Goals
 
-- Explain what Spring is and what advantages it provides us.
-- Explain how SpringBoot fits into the ecosystem.
+- Explain what an application framework is and how it can be beneficial.
+- Discuss the advantages to using Spring.
 
-## Spring Introduction
+## What is an Application Framework?
 
-Spring is one of the most popular Java application frameworks in the world. An
-application framework provides a set of functionalities which we can use to
-build an app. They can provide several features and developers can decide which
-specific features to use on their projects.
+An **application framework** provides a set of functionalities which we can use
+to build an application. They provide several features that developers can use.
+Depending on the application, the developers can decide which specific features
+to use on their projects.
 
-An application framework can make working with non-business logic code a lot
-simpler by providing abstractions for features like security, logging, caching,
-transaction, etc. Here are some of the modules that Spring provides:
+We can think of an application framework like this: Consider buying a
+Do-It-Yourself (DIY) piece of furniture. When we make this purchase, we get
+several tools and parts to build the piece of furniture. But we may also get
+extra parts! For example, we might be interested in building a desk. But we
+could get parts to assemble any kind of desk! All the parts and tools are
+available, but it is up to us, the developers, to choose which parts to create
+the appropriate desk we want. Maybe we want a standing desk instead of a sitting
+desk. We get to select which features to implement when assembling our desk
+given the parts and tools provided.
 
-- Component Container: manages object life cycle in the application.
-- Data Modules: abstractions for working with different databases.
-- Web Framework: abstractions, configurations, and conventions for creating
-  different types of web applications.
-- Security Module: enables authentication and authorization in the application.
+An application framework works the same way. The framework provides us all the
+features we could want to create our application. It is up to us, the
+developers, to choose the appropriate software capabilities from the framework
+to build our application. Some components a framework might offer are
+abstractions for capabilities like security, logging, caching, and other
+utilities that may be common across various applications.
 
-You can check out the full list of modules provided by Spring on
-[their website](https://spring.io/projects).
+## Why Use an Application Framework?
 
-## Spring Core
+So far, we have been building Java programs without an application framework and
+have been holding our own just fine. So why do we need an application framework?
 
-The Spring Core provides the foundational mechanisms for integrating Spring into
-applications. The core container is based on the _Inversion of Control_
-principle. Instead of defining exactly how an application is controlled
-(instance creation, calling methods, etc.), we define configurations which
-instruct Spring on how to manage the code.
+Reuse, reuse, reuse!
 
-![Spring process overview](https://curriculum-content.s3.amazonaws.com/java-spring-1/spring-intro-image.png)
+They always say to not reinvent the wheel and this is a case for that saying.
+Since application frameworks already come with built-in features for us to
+pick and choose from, we can just reuse code and capabilities that already exist
+and have been tested by others. There is also a community support of other
+programmers using these built-in features where we can seek help and support if
+needed. As we build more complex programs, the more we can take advantage of
+these features offered by application frameworks, cutting down our costs, and
+allowing us to just focus on writing the business logic.
 
-POJO stands for “Plain Old Java Objects” which are simply regular Java objects
-without any connection to a framework. The metadata for objects is defined using
-annotations. The annotations instruct Spring on how to manage the POJOs which
-results in the final behavior of the application.
+## What is Spring?
 
-## SpringBoot
+Spring is one of the most popular Java application frameworks in the world. It
+will allow us to build an application using "Plain Old Java Objects" or POJOs
+while taking advantage of some popular features in the Spring framework. Spring
+is a collection of sub-frameworks, or modules. This introduces us to the concept
+of the **Spring ecosystem**. Here are some of the software capabilities that
+are included in the Spring framework:
 
-A Spring application requires lots of configuration. SpringBoot is a project
-under Spring which takes care of most of the configurations so that developers
-can focus on the business logic of their application. Here are some of the
-benefits of SpringBoot:
+- **Spring Core**: provides the foundational mechanisms for integrating Spring
+  into applications. The Spring core is based on the _Inversion of Control_
+  principle. Instead of defining exactly how an application is controlled,
+  (instance creation, calling methods, etc.) we define configurations which
+  instruct Spring on how to manage code.
+- **Spring Model-View Controller (MVC)**: allows programmers to develop web
+  applications.
+- **Spring Data Access**: supports connecting an application to a database
+  (like PostgreSQL) to abstract the process of data persistence.
+- **Spring Testing**: allows developers to write tests for a Spring application.
+
+For more information on the Spring modules included in the Spring framework,
+checkout out the
+[Introduction to Spring Framework](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/overview.html).
+
+## What is Spring Boot?
+
+As Spring grew in popularity and its ecosystem evolved, Spring introduced the
+concept of **Spring projects**. These projects were developed on top of the
+existing Spring framework to enhance certain functionalities. Here is a list of
+some Spring projects worth mentioning:
+
+- Spring Boot
+- Spring Cloud
+- Spring Security
+- Spring Batch
+- Spring Mobile
+
+For a full list of projects, see [Spring Projects](https://spring.io/projects).
+
+Within this module, we will focus mainly on Spring Boot.
+
+A Spring application requires lots of configuration. **Spring Boot** is a
+project under Spring which takes care of most of the configurations so that
+developers can focus on the business logic of their application. Here are some
+of the benefits of Spring Boot:
 
 - Easy project creation: initialization services like
   [Spring Initializr](https://start.spring.io/) provide skeleton applications
   with base configurations.
 - Dependency Starters: there are bundled dependencies for specific types of
   applications.
-- Dependency based auto configuration: default configurations are defined based
+- Dependency based autoconfiguration: default configurations are defined based
   on the dependencies added to the project.
 - Application health/metrics monitoring.
 - Embedded application server.
 
 ## Conclusion
 
-We have learned about Spring, some of its modules, and SpringBoot in this
+We have learned about Spring, some of its modules, and Spring Boot in this
 lesson. Spring is an application framework that makes application management
-easier and SpringBoot is a sub project of Spring which streamlines most
+easier and Spring Boot is a subproject of Spring which streamlines most
 configurations. In the coming lessons, we will learn more about both Spring and
-SpringBoot.
+Spring Boot.
 
 ## References
 
 - [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/index.html)
   (reference document)
+- [Introduction to Spring Framework](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/overview.html)
+- [Spring Projects](https://spring.io/projects)
 - [Spring Guides](https://spring.io/guides)
