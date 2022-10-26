@@ -12,15 +12,13 @@ to build an application. They provide several features that developers can use.
 Depending on the application, the developers can decide which specific features
 to use on their projects.
 
-We can think of an application framework like this: Consider buying a
-Do-It-Yourself (DIY) piece of furniture. When we make this purchase, we get
-several tools and parts to build the piece of furniture. But we may also get
-extra parts! For example, we might be interested in building a desk. But we
-could get parts to assemble any kind of desk! All the parts and tools are
-available, but it is up to us, the developers, to choose which parts to create
-the appropriate desk we want. Maybe we want a standing desk instead of a sitting
-desk. We get to select which features to implement when assembling our desk
-given the parts and tools provided.
+We can think of an application framework like this: Consider a set of classic
+LEGO bricks. The set comes with several different types of pieces to build
+whatever we may want along with some suggestions of what to possibly create.
+All the building blocks are available, but it is up to us, the developers, to
+choose which pieces we want to use. Maybe we want to use the LEGOs to build a
+castle, but another project wants to use the LEGO pieces to build a city. We get
+to select which features to implement when assembling our LEGO creation.
 
 An application framework works the same way. The framework provides us all the
 features we could want to create our application. It is up to us, the
